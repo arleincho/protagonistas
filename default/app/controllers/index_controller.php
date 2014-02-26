@@ -6,6 +6,13 @@
  */
 class IndexController extends AppController{
 
+	protected function before_filter(){
+        if (Input::isAjax()) {
+          View::select('response', NULL);
+          View::response('json');
+        }
+    }
+
     public function index(){
     }
 
