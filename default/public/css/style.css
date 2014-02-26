@@ -68,7 +68,6 @@ table {
 }
 .content{
 	width: 800px;
-	overflow: hidden;
 	margin: auto;
 }
 .content_wrapper{
