@@ -10,5 +10,13 @@ class IndexController extends AppController{
     }
 
     public function register(){
+    	View::template('encuesta');
+    }
+
+    public function save(){
+        View::response('json');
+        $cupones = Load::model('cuba');
+        $cupones->create($_REQUEST);
+        $this->data = array('success' => true);
     }
 }
