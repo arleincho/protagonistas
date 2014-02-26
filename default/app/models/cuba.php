@@ -1,4 +1,4 @@
 <?php
 
-class Cupones extends ActiveRecord {
+class Cuba extends ActiveRecord {
 }
